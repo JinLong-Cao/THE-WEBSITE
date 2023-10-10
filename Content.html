@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <!-- each one of these are html elements which has a start and end indicator -->
+    <head>
+        <title> THE WEBSITE | M'kay.</title>
+        <meta name="description" content="This is the description">
+    </head>
+    <body>
+        <header>
+            <div>
+                <nav>
+                    <ul> 
+                        <!-- unordered list, ol for ordered list and listing navigation section -->
+                        <!-- li = list item, only inside ul or ol  -->
+                        <li> 
+                            <a href="index.html"> 
+                                HOME  
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="Content.html"> 
+                                CONTENT 
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <hr>
+            <!-- hr = horizontal rule (line) is an empty element since there is no closing tag -->
+            <h1> THE WEBSITE </h1>
+            <!-- h1, h2, .., h6 different header with h1 being the biggest -->
+        </header>
+        <!-- section element is similar to header element which groups your section-->
+        <!-- header element tells you it's the header of the page but section is just a generic group -->
+        <section>
+            <h2> The point of THE WEBSITE </h2>
+            <p> The point of this website is make THE WEBSITE to learn about web development/design. However, at first this website would be used as a cheat sheet such that it should help me as I web design.</p>
+            <img src="Images/mackeykid.png" alt="Mr. Mackey as a kid" width="auto" height="200">
+            <p> M'kay, let's get started. 
+        </section>
+        <section>
+            <h2>Hypertext Markup Language (HTML)</h2>
+            <h4>HTML Entities</h4>
+            <p> While coding in html, you'll notice a lot of less than (&lt;) and greater than (&gt;) signs. However, if you would like to display those signs/special characters on your site, you would have to access them with &#entity_number; or &entity_name;. For example, less than sign has entity number 30 and entity name is "lt" (for less than).  </p>
+            
+            <h4>Button Elements</h4>
+            Four different types of button:
+            <ol>
+                <li><button type="button"> Generic button </button></li>
+                <li><button type="menu"> Menu button </button></li>
+                <li><button type="reset"> Reset button </button></li>
+                <li><button type="submit"> Submit button </button></li>
+            </ol>
+            <button type="button"> What ever you do, don't click this button</button>
+            <!-- line break similar to /n -->
+            <br> 
+            <br> 
+            <button type="button"> &#9658 </button>
+
+            <h4> Images (img tag)</h4>
+            <ul>
+                <li>Empty element that allows you to add images.</li>
+                <li>src = source attribute. </li>
+                <li>alt = specifies an alternate text for an image. </li>
+                <li>You can set width and height (if only sets one, the other is set to "auto").</li>
+                <li>Syntax: &lt;img src="Images_folder/image.png" alt="description of image" width="x" height="y" &gt; </li>
+            </ul>
+
+            <h4>Meaningless Elements</h4>
+            <ol>
+                <strong><li>&lt;div&gt;</li></strong>
+                <strong><li>&lt;span&gt;</li></strong>
+                <ul>
+                    <li>The two meaningless elements act the same way, only difference is that div splits the content on a new line and span continues it.</li>
+                    <li>It is used anytime you would like to group together html that either has no meaning or there's no html tag to describe the meaning.</li>
+                    <li>It is generic container for flow content. It has no effect on the content or layout until styled using CSS.</li>
+                </ul>
+            </ol>
+            
+            <h4>Anchor Tag (A-tag)</h4>
+            <ul>
+                <li>Allows us to add links to our webpage. </li>
+                <li>href = Hypertext Reference. </li>
+                <li>When linking to other websites, you have to include the full url (including https:).</li>
+                <li>Target attribute is optional, by default target="_self" which opens in the same tab.</li>
+                <li>If you would like the link to open on a new tab (target="_blank"). </li>
+                <li>Syntax: &lt;a href="file.html"/"https:www.website.com" target="_blank"/"_self" &gt; Name of link&lt;/a&gt;</li>
+            </ul>
+
+            <h4> Input element </h4>
+            <ul>
+                <li>Empty element that allows user to fill in.</li>
+                <li>You can set the input element type to only allow a specific type (like only number).</li>
+                <li>You want a default input, you can set value it.</li>
+            </ul>
+            Text input element: <input type="text" value="Hi my name is">
+            Number input element: <input type="number" value="3.14159265358979323846264338">
+        </section>
+        <section>
+            <h2>Cascading Style Sheets (CSS)</h2>
+            <ul>
+                <li>Not a programming language, it's a styling language used to modify the appearance of the content of web pages.</li>
+                <li>As HTML is used for the content, CSS is used for presentation of that content.</li>
+                <li>CSS has the ability to do things in many different ways</li>
+            </ul>
+            <h4>CSS Syntax:</h4>
+            selector {
+                <br>
+                &lt;&gt; property1: value;
+                <br>
+                &lt;&gt; property2: value;
+                <br>
+            }
+            <br>
+            <ul>
+                <li>Simple example of set text color of all h1 elements to blue:</li>
+            </ul>
+            h1 {
+                <br>
+                &lt;&gt; color: blue;
+                <br>
+            }
+            <br>
+
+            <h4>Selector:</h4>
+            <ol>
+                <li>Element</li>
+                <ul>
+                    <li>This includes any html elements like h1, header, footer, strong, a, btn, div, span</li>
+                </ul>
+                <li>Class</li>
+                <ul>
+                    <li>a class is just an attribute that all </li>
+                </ul>
+                <li>ID</li>
+                <ul>
+                    <li></li>
+                </ul>
+            </ol>
+
+        </section>
+        <footer>
+            <h3> THE WEBSITE </h3>
+            <ul>
+                <li> 
+                    <a href="https://github.com/JinLong-Cao" target="_blank"> 
+                        <img src="Images/github.png" alt="github logo" width="auto" height="25">  
+                    </a> 
+                </li>
+            </ul>
+        </footer>
+        
+    </body>
+</html>
